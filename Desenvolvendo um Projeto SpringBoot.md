@@ -42,3 +42,28 @@ Para criar uma requisição precisamos definir métodos no ``Controller``
     ```
    
 Isso é somente uma representação, no corpo do método poderiamos realizar diversas operações. Processamento de dados, requisições de banco de dados, tratamento de erros, etc!
+
+# Adicionando dependências
+Um projeto Springboot pode necessitar de diversas dependências para ser concluído, afinal, ninguem faz tudo do zero! Para adicionar dependências basta usar um gerenciador de projetos.
+Neste caso estarei usando maven, mas o processo é semelhante em muitos outros gerenciadores!
+
+1. Procure no goolge ``<nome da depêndencia> maven dependency``, provavelmente o primeiro link será o correto!
+2. Caso esteja em dúvida, acesse o [repositório de dependências do projeto Maven](https://mvnrepository.com/) 
+3. Agora clique na sua versão escolhida e copie a marcação XML!
+    ```xml
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-jpa</artifactId>
+		</dependency>
+    ```
+4. Será algo semelhante a isso! Agora cole isso entre a tag ``dependencies``
+    ```xml
+   <dependencies>
+   		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-jpa</artifactId>
+		</dependency>
+   </dependencies>
+   ```
+
+5. 
